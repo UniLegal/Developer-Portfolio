@@ -7,7 +7,8 @@ export default function Footer() {
 
     return (
         <footer className="light-bg flex justify-space">
-            <span className="white">Copyright © {year} <Link href="/">Blaiti</Link> - All rights reserved.</span>
+            {/*<span className="white">Copyright © {year} <Link href="/">Blaiti</Link> - All rights reserved.</span>*/}
+            <span className="white">BLK 22 WOODLANDS LINK #02-09 SINGAPORE 738734</span>
             <ul className="flex">
                 <li>
                     <a href="https://www.facebook.com/blaiti" target="_blank" rel="noreferrer">

@@ -7,20 +7,20 @@ export default function About() {
             <div className="flex">
                 <div className="flex-full">
                     <AboutCard
-                        title="UX/UI Design"
+                        title="5 Years Warranty"
                         icon="/icons/design.svg"
-                        description="I create design  products with unique ideas."
-                        projects={7} />
+                        description="We provide a 5 years warranty for all our products to ensure peace of mind for all our customers."
+                         />
                     <AboutCard
-                        title="Web Design"
+                        title="BCA Approved Window Contractor"
                         icon="/icons/code.svg"
-                        description="I develop Front-End with coding super smooth."
-                        projects={10} />
+                        description="Our company is a BCA approved and HDB licensed window contractor."
+                        />
                     <AboutCard
-                        title="Mobile"
+                        title="Direct-to-consumer with No Hidden Fees"
                         icon="/icons/phone.svg"
-                        description="I develop cross-platform mobile applications."
-                        projects={7} />
+                        description="We are the manufacturer of all the products and we promise that no hidden fees for all our service."
+                        />
                 </div>
                 
                 <div className="flex-full about-text">
@@ -32,13 +32,13 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="flex partners justify-space">
+            {/*<div className="flex partners justify-space">
                 <Image src="/images/partners/wallety.png" height={45} width={180} alt="wallety" />
                 <Image src="/images/partners/artisty.png" height={45} width={180} alt="artisty" />
                 <Image src="/images/partners/khedma-lik.png" height={45} width={180} alt="khedma-lik" />
                 <Image src="/images/partners/directy.png" height={45} width={180} alt="directy" />
                 <Image src="/images/partners/telefy.png" height={45} width={180} alt="telefy" />
-            </div>
+    </div>*/}
         </section>
     )
 }
@@ -47,10 +47,10 @@ type Props = {
     title: string,
     icon: string | StaticImageData,
     description: string,
-    projects: number
+    //projects: number
 }
 
-function AboutCard ({title, icon, description, projects} : Props) {
+function AboutCard ({title, icon, description} : Props) {
     return(
         <div className="light-bg about-card">
             <div className="flex justify-space">
@@ -58,7 +58,7 @@ function AboutCard ({title, icon, description, projects} : Props) {
                 <Image src={icon} width={28} height={28} alt={title} />
             </div>
             <p className="white">{description}</p>
-            <span className="gray">{projects.toString()} projects</span>
+            {/*<span className="gray">{projects.toString()} projects</span>*/}
         </div>
     )
 }
